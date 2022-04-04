@@ -59,6 +59,9 @@ using namespace std;
 #include "utils.h"
 #include "telnet.h"
 
+#pragma warning(disable : 4996)
+#pragma comment(lib, "Ws2_32.lib")
+
 ///////////////////////////////////////////////////////////////
 static SOCKET Accept(SOCKET hSockListen);
 static void Disconnect(SOCKET hSock);
